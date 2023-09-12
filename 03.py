@@ -31,4 +31,4 @@ for frames in range(12):
     frameDuration(1/2)         
     Ts(200)
 
-saveImage("_exp/03.gif")
+# saveImage("_exp/03.gif")
