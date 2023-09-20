@@ -1,3 +1,7 @@
+def bg(c):
+    fill(c)
+    rect(0, 0, width(), height())
+
 def randcolor(c):
     actual = colors[int(random.uniform(0, len(c)))]
     return(hex_to_rgb(actual))

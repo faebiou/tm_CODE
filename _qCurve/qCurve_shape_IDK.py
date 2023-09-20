@@ -32,7 +32,7 @@ p.lineTo(P1)
 p.qCurveTo(P2, P3)
 p.endPath()
 
-t = 28
+t = 50
 t = t / 100
 
 x1 = lerp(P0[0], P1[0], t)
