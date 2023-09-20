@@ -17,7 +17,7 @@ A = [
     [four, [590, 460], five],
 ]
 
-t = 55
+t = 50
 t = t / 100
 
 def midoval(x, y, r):

@@ -13,9 +13,9 @@ def quad(A, B, C, f):
 r = 10
 p = BezierPath()
 
-P0 = 160, 150
-P1 = 540, 800
-P2 = 780, 520
+P0 = 200, 230
+P1 = 540, 770
+P2 = 780, 470
 P3 = 500, 200
 
 fill(1)
@@ -32,7 +32,7 @@ p.lineTo(P1)
 p.qCurveTo(P2, P3)
 p.endPath()
 
-t = 36
+t = 28
 t = t / 100
 
 x1 = lerp(P0[0], P1[0], t)

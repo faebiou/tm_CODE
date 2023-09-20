@@ -35,7 +35,7 @@ stroke(0, 1, 0)
 line(A, B)
 line(B, C)
 
-t = 45
+t = 47
 t = t / 100
 
 Lx = lerp(A[0], B[0], t)

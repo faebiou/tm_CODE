@@ -5,8 +5,8 @@ fill(0.1)
 rect(0, 0, width(), height())
 
 one = (106, 284)
-two = (430, 544)
-three = (120, 620)
+two = (460, 544)
+three = (140, 650)
 four = (796, 696)
 five = (860, 120)
 
