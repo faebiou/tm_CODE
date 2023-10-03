@@ -2,39 +2,44 @@
 # word is a string, x and y _start are the coordinates
 # lineheight is the distance between letters
 # alignment can be center, left, or right
-def vertext(word, x_start, y_start, line_height, alignment):
+def vertext(w, x_start, y_start, line_height, alignment):
    
     # loop through the word
-    for letter in range(len(word)):
+    for letter in range(len(w)):
         # place letters one by one in the correct position
-        text(word[letter], (x_start, y_start - (letter * line_height)), align = alignment)
+        text(w[letter], (x_start, y_start - (letter * line_height)), align = alignment)
+
 
 # page size
-newPage("A4")
+newPage(1080, 1920)
 
 # setting the font
 font_name = "Skia"
 font(font_name)
 
-# vertical position
-pos = 652
-
 #setting the font size
-fs = 152
+fs = 191
 
 # variable font WGHT axis value
 # in Skia's case falls between .48 – 3.2
 # WGHT might be changed to whatever axis
-wght_value = 226 / 100
+wght_value = 200 / 100
 
 # setting the line height percentage
-lh_percent = 120
+lh_percent = 88
 
 fontSize(fs)
 fontVariations(wght = wght_value)
-lh = fs * lh_percent / 100
+lh = fs * (lh_percent / 100)
+
+word = "TACOFISH"
+
+# vertical position
+half = len(word)/2
+pos = height()/2 - lh
+translate(0, (half * lh))
 
 # using the function
-vertext("WHAT", width()/2, pos, lh, "center")
+vertext(word, width()/2, pos, lh, "center")
 
 # enjoy
