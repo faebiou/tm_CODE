@@ -1,4 +1,2 @@
-import fun as f
+from fun import *
 
-print(f.timestamp())
-f.bg(.9)
