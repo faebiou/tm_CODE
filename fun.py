@@ -2,6 +2,9 @@ import time as t
 
 import sys, os
 
+from drawBot import *
+
+
 def fName():
     f =  os.path.basename(sys.argv[0])
     return os.path.splitext(str(f))[0]
@@ -17,6 +20,7 @@ def timestamp():
 
 
 def bg(c):
+    print("hellloooooo")
     fill(c)
     rect(0, 0, width(), height())
 
