@@ -1,0 +1,1 @@
+# define pixel shape that uses same function recursive
