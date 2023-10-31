@@ -48,7 +48,7 @@ def bg(c):
 
 # distance formula thanks to Pythagoras
 def dist(x1, y1, x2, y2):
-    return (x1 - x2) ** 2 + (y1 - y2) ** 2
+    return sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
 
 # the OG midoval also known as circle()
