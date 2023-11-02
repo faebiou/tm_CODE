@@ -8,6 +8,7 @@ fill(0.19)
 font("Menlo-Bold")
 fontSize(300)
 text("FAST", (150, 750))
+
 with savedState():
     rotate(-60)
     text("CHEAP", (-633, 270))
@@ -31,7 +32,7 @@ line(pos1, pos2)
 line(pos2, pos3)
 line(pos3, pos1)
 
-pos = 504, 544
+pos = 764, 348
 
 line(pos, pos1)
 line(pos, pos2)
@@ -47,9 +48,9 @@ f.midoval(*pos3, d)
 fill(1)
 f.midoval(*pos, 40)
 
-FAST = 1 - f.dist(*pos, *pos1) / 666
-CHEAP = 1 - f.dist(*pos, *pos2) / 666
-GOOD = 1 - f.dist(*pos, *pos3) / 666
+FAST = f.dist(*pos, *pos1) / 666
+CHEAP = f.dist(*pos, *pos2) / 666
+GOOD = f.dist(*pos, *pos3) / 666
 
 FAST_factor = 1
 CHEAP_factor = 1
@@ -58,10 +59,10 @@ GOOD_factor = 1
 print(FAST)
 print(CHEAP)
 print(GOOD)
-print()
-print(FAST * FAST_factor)
-print(CHEAP * CHEAP_factor)
-print(GOOD * GOOD_factor)
+# print()
+# print(FAST * FAST_factor)
+# print(CHEAP * CHEAP_factor)
+# print(GOOD * GOOD_factor)
 
 overall = FAST * FAST_factor * CHEAP * CHEAP_factor * GOOD * GOOD_factor
 print()
@@ -72,13 +73,13 @@ stroke(None)
 font("Menlo")
 fontSize(10)
 
-y = 42
+y = 50
 fill(1, 0, 0)
-rect(30, y, 40, FAST * 170)
+rect(30, y, 40, FAST)
 text("FAST", (30, y - 16))
 fill(1, 1, 0)
-rect(80, y, 40, CHEAP * 170)
+rect(80, y, 40, CHEAP)
 text("CHEAP", (80, y - 16))
 fill(0, 1, 1)
-rect(130, y, 40, GOOD * 170)
+rect(130, y, 40, GOOD)
 text("GOOD", (130, y - 16))

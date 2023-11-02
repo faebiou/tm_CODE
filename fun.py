@@ -48,7 +48,7 @@ def bg(c):
 
 # distance formula thanks to Pythagoras
 def dist(x1, y1, x2, y2):
-    return sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+    return (x1 - x2) ** 2 + (y1 - y2) ** 2
 
 
 # the OG midoval also known as circle()
@@ -59,6 +59,11 @@ def midoval(x, y, s):
 # similar to midoval, but with a rect of course
 def midrect(x, y, r):
     rect(x - r / 2, y - r / 2, r, r)
+
+
+# Just's circle()
+def circle(x, y, r):
+    oval(x - r, y - r, 2 * r, 2 * r)
 
 
 # equilateral triangle, sort of
