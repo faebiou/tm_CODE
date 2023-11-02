@@ -39,6 +39,11 @@ def info():
     fontSize(6)
     text(fName() + ".py | " + timestamp_alt(), (10, 10))
 
+# adds a caption in the corner with the filename with some extra string
+def info_extra(s):
+    font("Menlo")
+    fontSize(6)
+    text(fName() + ".py | " + timestamp_alt() + " | " + s, (10, 10))
 
 # places a grey background of desired lightness
 def bg(c):
