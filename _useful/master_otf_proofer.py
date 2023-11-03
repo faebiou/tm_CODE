@@ -25,7 +25,7 @@ for OTF in range(len(OTFs)):
     fs = 24
     txt = FormattedString()
     for c in chars:
-    
+        font(OTFs[0])
         if fontContainsGlyph(c):
             txt.append(c, font = OTFs[OTF], fontSize = fs, fill = (0, 0, 0))
         else:
