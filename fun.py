@@ -1,9 +1,6 @@
-import time as t
-
 import sys, os
-
+from datetime import datetime
 from drawBot import *
-
 
 # returns the name of the file, without its extension
 def fName():
@@ -13,24 +10,15 @@ def fName():
 
 # returns a timestamp like YEAR_MONTH_DAY where the year is only the last two digits
 def timestamp():
-    Y = str(t.localtime()[0] - 2000)
-    M = str(t.localtime()[1])
-    D = str(t.localtime()[2])
-    H = str(t.localtime()[3])
-    M = str(t.localtime()[4])
-    S = str(t.localtime()[5])
-    return Y + "_" + M + "_" + D
+    now = datetime.now()
+    return str(now.year - 2000) + "_" + str(now.month) + "_" + str(now.day)
 
 
 # same as timestamp, but also has the hour and seconds – good for iterating
 def timestamp_alt():
-    Y = str(t.localtime()[0] - 2000)
-    M = str(t.localtime()[1])
-    D = str(t.localtime()[2])
-    H = str(t.localtime()[3])
-    M = str(t.localtime()[4])
-    S = str(t.localtime()[5])
-    return Y + "_" + M + "_" + D + "__" + H + "_" + M + "_" + S
+    now = datetime.now()
+    return (
+        str(now.year - 2000) + "_" + str(now.month) + "_" + str(now.day) + "__" + str(now.hour) + "_" + str(now.minute) + "_" + str(now.second))
 
 
 # adds a caption in the corner with the filename and time of running
@@ -39,10 +27,12 @@ def info():
     fontSize(6)
     text(fName() + ".py | " + timestamp_alt(), (10, 10))
 
+
 # adds a caption in the corner with the filename with some extra string
 def info_extra(s):
     font("Menlo")
     text(fName() + ".py | " + timestamp_alt() + " | " + s, (10, 10))
+
 
 # places a grey background of desired lightness
 def bg(c):
