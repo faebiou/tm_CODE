@@ -18,18 +18,7 @@ def timestamp():
 def timestamp_alt():
     now = datetime.now()
     return (
-        str(now.year - 2000)
-        + "_"
-        + str(now.month)
-        + "_"
-        + str(now.day)
-        + "__"
-        + str(now.hour)
-        + "_"
-        + str(now.minute)
-        + "_"
-        + str(now.second)
-    )
+        str(now.year - 2000) + "_" + str(now.month) + "_" + str(now.day) + "__" + str(now.hour) + "_" + str(now.minute) + "_" + str(now.second))
 
 
 # adds a caption in the corner with the filename and time of running
@@ -75,14 +64,6 @@ def circle(x, y, r):
 def triangle(x, y, h):
     a = (2 / sqrt(3)) * h
     polygon((x - a / 2, y - h / 2), (x, y + h / 2), (x + a / 2, y - h / 2))
-
-
-def Vg(x):
-    line((x, 0), (x, height()))
-
-
-def Hg(y):
-    line((0, y), (width(), y))
 
 
 # takes a HEX color and converts it to RGB

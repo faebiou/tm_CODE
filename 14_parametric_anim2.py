@@ -27,8 +27,8 @@ def Coordinates(x, y, d):
     fill(0.7)
     text(str(int(x)) + " " + str(int(y)), (x, y+d))
 
-w = 242
-h = 365
+w = 420
+h = 700
 
 def path_anim():
     path.moveTo((0, h))
@@ -44,8 +44,8 @@ def path_anim():
     path.curveTo((-w_inner, D), (-C, h_inner), (0, h_inner))
     drawPath(path)
 
-numframes = 60
-scale = 3
+numframes = 24
+scale = 4
 
 for frame in range(numframes):
     if frame <= numframes/2:
@@ -75,7 +75,7 @@ for frame in range(numframes):
     handles = BezierPath()
 
     newPage(1080, 1920)
-    frameDuration(1/numframes)
+    frameDuration(1/6)
     fill(1)
     rect(0,0,width(), height())
     

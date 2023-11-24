@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	height: 100vh;
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+
+img.active {
+	height: 100vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}

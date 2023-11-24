@@ -5,7 +5,7 @@ bez = BezierPath()
 
 fs = 1000
 
-for frame in range(12):
+for frame in range(1):
     newPage(1080, 1920)
 
     bez.text(
@@ -29,7 +29,7 @@ for frame in range(12):
                 fill(0, 0, 1)
             circle(i, j, steps * 1.6 * frame/10)
 
-for frame in range(12):
+for frame in range(1):
     newPage(1080, 1920)
 
     bez.text(
@@ -53,4 +53,4 @@ for frame in range(12):
                 fill(0, 0, 1)
             circle(i, j, steps * 1.6 * (12-frame)/10)
             
-saveImage("_exp/32.gif")
+saveImage("_exp/32_edit.gif")
