@@ -9,7 +9,7 @@ def mover(step):
     rect(0, 0, width(), height())
     frameDuration(duration)
     t = step / total
-    tt = (sin(2 * pi * t - pi/2) + 1) / 2
+    tt = (-cos(2 * pi * t) + 1) / 2
     
     ballSize = 200
     fill(0)    
@@ -17,6 +17,6 @@ def mover(step):
     oval(x, height()/2 - ballSize/2, ballSize, ballSize)
 
 for frame in range(total):
-    mover(frame) if frame <= total / 2 else mover(total - frame)
+    mover(frame) if frame <= (total / 2) else mover(total - frame)
     
 saveImage("looptest_minimal.gif")
