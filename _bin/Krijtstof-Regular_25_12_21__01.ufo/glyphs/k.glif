@@ -1,54 +1,54 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="k" format="2">
-  <advance width="515"/>
-  <unicode hex="006B"/>
-  <outline>
-    <contour>
-      <point x="82" y="152" type="line"/>
-      <point x="82" y="72" type="line"/>
-      <point x="39" y="8" type="line"/>
-      <point x="43" y="0" type="line"/>
-      <point x="218" y="0" type="line"/>
-      <point x="222" y="8" type="line"/>
-      <point x="178" y="72" type="line"/>
-      <point x="178" y="152" type="line"/>
-    </contour>
-    <contour>
-      <point x="175" y="753" type="line"/>
-      <point x="30" y="699" type="line"/>
-      <point x="30" y="694" type="line"/>
-      <point x="82" y="651" type="line"/>
-      <point x="82" y="0" type="line"/>
-      <point x="178" y="0" type="line"/>
-      <point x="178" y="749" type="line"/>
-    </contour>
-    <contour>
-      <point x="472" y="524" type="line"/>
-      <point x="470" y="530" type="line"/>
-      <point x="307" y="530" type="line"/>
-      <point x="305" y="524" type="line"/>
-      <point x="366" y="450" type="line"/>
-      <point x="369" y="498" type="line"/>
-      <point x="156" y="247" type="line"/>
-      <point x="208" y="277" type="line"/>
-      <point x="167" y="277" type="line"/>
-      <point x="167" y="190" type="line"/>
-    </contour>
-    <contour>
-      <point x="332" y="0" type="line"/>
-      <point x="513" y="0" type="line"/>
-      <point x="517" y="6" type="line"/>
-      <point x="304" y="352" type="line"/>
-      <point x="243" y="296" type="line"/>
-      <point x="387" y="33" type="line"/>
-      <point x="373" y="65" type="line"/>
-      <point x="328" y="7" type="line"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>com.schriftgestaltung.Glyphs.lastChange</key>
-      <string>2023-11-14 10:13:56 +0000</string>
-    </dict>
-  </lib>
+	<advance width="515"/>
+	<unicode hex="006B"/>
+	<outline>
+		<contour>
+			<point x="82" y="152" type="line"/>
+			<point x="82" y="72" type="line"/>
+			<point x="39" y="8" type="line"/>
+			<point x="43" y="0" type="line"/>
+			<point x="218" y="0" type="line"/>
+			<point x="222" y="8" type="line"/>
+			<point x="178" y="72" type="line"/>
+			<point x="178" y="152" type="line"/>
+		</contour>
+		<contour>
+			<point x="175" y="753" type="line"/>
+			<point x="30" y="699" type="line"/>
+			<point x="30" y="694" type="line"/>
+			<point x="82" y="651" type="line"/>
+			<point x="82" y="0" type="line"/>
+			<point x="178" y="0" type="line"/>
+			<point x="178" y="749" type="line"/>
+		</contour>
+		<contour>
+			<point x="472" y="524" type="line"/>
+			<point x="470" y="530" type="line"/>
+			<point x="307" y="530" type="line"/>
+			<point x="305" y="524" type="line"/>
+			<point x="366" y="450" type="line"/>
+			<point x="369" y="498" type="line"/>
+			<point x="156" y="247" type="line"/>
+			<point x="208" y="277" type="line"/>
+			<point x="167" y="277" type="line"/>
+			<point x="167" y="190" type="line"/>
+		</contour>
+		<contour>
+			<point x="332" y="0" type="line"/>
+			<point x="513" y="0" type="line"/>
+			<point x="517" y="6" type="line"/>
+			<point x="304" y="352" type="line"/>
+			<point x="243" y="296" type="line"/>
+			<point x="387" y="33" type="line"/>
+			<point x="373" y="65" type="line"/>
+			<point x="328" y="7" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.schriftgestaltung.Glyphs.lastChange</key>
+			<string>2023-11-14 10:13:56 +0000</string>
+		</dict>
+	</lib>
 </glyph>
