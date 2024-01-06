@@ -50,4 +50,4 @@ for i in range(10):
     textBox(encourage[i], (marge, marge, 1450, marge + 10))
     textBox(words, (500, marge, 1450, marge + 10), align = "right")
 
-saveImage("essay_motivator.gif", imageResolution = 300)
+saveImage("essay_motivator.mp4")
