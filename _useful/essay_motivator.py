@@ -5,7 +5,7 @@ deadline = datetime.datetime(2024, 1, 15)
 countdown = deadline - now
 panik = round(countdown.days*24 + countdown.seconds/3600, 2)
 
-goal = 3000 # word count requirement
+goal = 5000 # word count requirement
 
 f = open("/Users/faebiou/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents/TM_2324_iA/REVIVAL/PROCESS.md", "r", encoding='utf-8') # path to your text file – use txt, rtf, or md; could work with doc or pages but ¯\_(ツ)_/¯
 
@@ -41,9 +41,9 @@ words = "%s words of " % wordCount + str(goal) + "\n%s hours left" % panik
 fill(0)
 font("Menlo")
 fontSize(72)
-text(msg, (1773, height() / 2 - marge * 1.5))
+text(msg, (width()-marge, height() / 2 - marge * 1.5), align = "right")
 fontSize(30)
 textBox(choice(encourage), (marge, marge, 1450, marge + 10))
-textBox(words, (500, marge, 1450, marge + 10), align = "right")
+textBox(words, (500, marge, width()-marge-500, marge + 10), align = "right")
 
 
