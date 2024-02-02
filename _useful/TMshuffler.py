@@ -13,4 +13,4 @@ for student in range(len(TM)):
     text(TM[student] + " → " + TM[student-1], (64, 60))
     translate(0, fs*lh)
     
-saveImage("../_exp/TMshuffler_3.pdf")
+saveImage("../_exp/TMshuffler_4.pdf")
