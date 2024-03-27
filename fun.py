@@ -1,5 +1,6 @@
 import sys, os
-from datetime import datetime
+import time
+import random as r
 from drawBot import *
 
 # returns the name of the file, without its extension
@@ -7,42 +8,28 @@ def fName():
     f = os.path.basename(sys.argv[0])
     return os.path.splitext(str(f))[0]
 
-
 # returns a timestamp like YEAR_MONTH_DAY where the year is only the last two digits
 def timestamp():
-    now = datetime.now()
-    return str(now.year - 2000) + "_" + str(now.month) + "_" + str(now.day)
+    ts = time.strftime("%y_%m_%d", time.localtime())
+    return ts
 
-
-# same as timestamp, but also has the hour and seconds – good for iterating
-def timestamp_alt():
-    now = datetime.now()
-    return (
-        str(now.year - 2000)
-        + "_"
-        + str(now.month)
-        + "_"
-        + str(now.day)
-        + "__"
-        + str(now.hour)
-        + "_"
-        + str(now.minute)
-        + "_"
-        + str(now.second)
-    )
-
+# same as timestamp() but with hours and minutes
+def timestamp_hour():
+    ts = time.strftime("%y_%m_%d_%H_%M", time.localtime())
+    return ts
 
 # adds a caption in the corner with the filename and time of running
 def info():
     font("Menlo")
     fontSize(6)
-    text(fName() + ".py | " + timestamp_alt(), (10, 10))
+    text(fName() + ".py | " + timestamp_hour(), (30, 30))
 
 
 # adds a caption in the corner with the filename with some extra string
 def info_extra(s):
     font("Menlo")
-    text(fName() + ".py | " + timestamp_alt() + " | " + s, (10, 10))
+    fontSize(6)
+    text(fName() + ".py | " + timestamp_hour() + " | " + s, (30, 30))
 
 
 # places a grey background of desired lightness
@@ -121,3 +108,9 @@ def to_hex(r, g, b):
     hex_color_code = "#" + r_hex + g_hex + b_hex
 
     return hex_color_code
+
+def insert(sourceText, bothFiles, fontSize, insertWeight):
+    newText = FormattedString()
+    for word in sourceText:
+        newText.append(f"{word} ", font=r.choices(bothFiles, weights=(1,insertWeight), k=1), fontSize=fontSize)
+    return newText
