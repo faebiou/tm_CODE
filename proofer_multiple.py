@@ -3,7 +3,7 @@ import fun as f
 import random as r
 
 Regular = "Normavaganza Text Regular"
-Bold = "Normavaganza Text Regular Bold"
+Bold = "Normavaganza Text Bold"
 Italic = "Normavaganza Text Italic"
 
 # first weight always = 1
@@ -13,6 +13,7 @@ fonts = [Regular, Bold, Italic]
 # 1/10 means every 10th word is Bold, 1/20 means every 20th word is Italic in this case
 weights = [1/10, 1/20]
 fs = 14
+lh = 127/100
 
 txt = '''\
 maiori mellemrum zorino lamella mamu alma erm anil veau nonae malum nevezme arm leon rouva vaner vana remover loaner miller eleanore ranarium rameno moi moralize lonnie ilamo name annen mueller amene melon anular allemal eleanor amelie armoire river amine momzer llera meille rulle riverain vola envirollen avenue animae run ruiner mara vainaa amor vivere noon enero merui rio monille mino larva love mini amen oar avale ene oliver variole vallan umana lueur nimia voel unir riviin mailla levi anima roll lenin aviven rene lianne mira lize ulmin miliona rivaal loze iaver nuera vin verval rommelen narazila mollio lalo viola minima mazze aurelian analemma rizzo numeroon naiver neo lerner amove luova vomere llum nona veniam muro ollie olivera earl ozono ano unelmani valuu oral vivien remi vin rue real verla immune naamaa loven onnozelaar uranium neverim annoia venner mel alarmar umrze voi milieu eilen nan alle lener emile mimi zaveziem anna morirme oom mooi orion nei nezmenil arnie elue molo overleve min ellene arriere laurel millionaire vernon nevelni unroll oluelle vine level nellie zoenen veimme vaaranna mariner volano mammon varir ouvrirai envier rollerne zoeal muzzier romanorum emeli revile elleni muoiano numrene inion lea rem moneron reza annuel avranno nimi zoe aveu
@@ -28,6 +29,7 @@ with savedState():
     font(Regular)
     
     fontSize(fs)
+    lineHeight(fs*lh)
     textBox(txt, box1)
 
     translate(gutter, 0)
@@ -39,7 +41,7 @@ with savedState():
     translate(gutter, 0)
 
     words = txt.split(" ")
-    textBox(f.insert_multiple(words, fonts, fs, weights), box1)
+    textBox(f.insert_multiple(words, fonts, fs, fs*lh, weights), box1)
 
 f.info()
 

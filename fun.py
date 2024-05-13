@@ -115,8 +115,8 @@ def insert(sourceText, bothFiles, fontSize, insertWeight):
         newText.append(f"{word} ", font=r.choices(bothFiles, weights=(1, insertWeight), k=1), fontSize=fontSize)
     return newText
     
-def insert_multiple(sourceText, allFiles, fontSize, insertWeights):
+def insert_multiple(sourceText, allFiles, fontSize, lineHeight, insertWeights):
     newText = FormattedString()
     for word in sourceText:
-        newText.append(f"{word} ", font=r.choices(allFiles, weights=(1, *insertWeights), k=1), fontSize=fontSize)
+        newText.append(f"{word} ", font=r.choices(allFiles, weights=(1, *insertWeights), k=1), fontSize=fontSize, lineHeight=lineHeight)
     return newText
